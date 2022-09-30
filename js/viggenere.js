@@ -157,7 +157,7 @@ function descifrado(posm, posk){
     let val=0;
     if((posm - posk) >= 0){
         //Todo está bien
-        val = (posm)%27;
+        val = (posm-posk)%27;
     }else{
         val = (posm - posk + 27)%27;
         
